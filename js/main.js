@@ -21,7 +21,8 @@ $(function(){
     console.log('testinput.lengt =', cl.length);
     console.log($('.no a'));
   })
-  var day = new Date('2018/09/27 00:00:00').getDay();
+  var day = new Date('2018-09-27 00:00:00').getDay();
+  if (isNaN(day)) { new Date((lesson_data.unit_data[0].l_start_time).replace(/-/g, '/')).getDay(); }
   document.write(day);
 })
 
