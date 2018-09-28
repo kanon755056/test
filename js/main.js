@@ -21,7 +21,7 @@ $(function(){
     console.log('testinput.lengt =', cl.length);
     console.log($('.no a'));
   })
-  var day = new Date('2018-09-27 00:00:00').getDay();
+  var day = new Date('2018/09/27 00:00:00').getDay();
   document.write(day);
 })
 
