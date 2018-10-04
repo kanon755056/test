@@ -22,12 +22,15 @@ $(function(){
     console.log($('.no a'));
   })
   var day = new Date('2018-09-27 00:00:00').getDay();
-  console.log('day =', day);
+  $('#day_text').text( $('#day_text').text() + new Date('2018-09-27 00:00:00').getDay());
+  $('#day_text').append('<br>')
   $('#day_text').text( $('#day_text').text() + day);
+  $('#day_text').append('<br>')
   if (isNaN(day)) { day = new Date(('2018-09-27 00:00:00').replace(/-/g, '/')).getDay(); }
-  console.log(('2018-09-27 00:00:00').replace(/-/g, '/'));
-  console.log('day =', day);
+  $('#day_text').text( $('#day_text').text() + ('2018-09-27 00:00:00').replace(/-/g, '/'));
+  $('#day_text').append('<br>')
   $('#day_text').text( $('#day_text').text() + day);
+  $('#day_text').append('<br>')
 })
 
 function _check_Number(num)
