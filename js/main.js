@@ -23,7 +23,7 @@ $(function(){
   })
   var day = new Date('2018-09-27 00:00:00').getDay();
   $('#day_text').text( $('#day_text').text() + day);
-  if (isNaN(day)) { new Date((lesson_data.unit_data[0].l_start_time).replace(/-/g, '/')).getDay(); }
+  if (isNaN(day)) { day = new Date((lesson_data.unit_data[0].l_start_time).replace(/-/g, '/')).getDay(); }
   $('#day_text').text( $('#day_text').text() + day);
 })
 
