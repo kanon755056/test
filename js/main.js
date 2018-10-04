@@ -22,8 +22,10 @@ $(function(){
     console.log($('.no a'));
   })
   var day = new Date('2018-09-27 00:00:00').getDay();
+  console.log('day =', day);
   $('#day_text').text( $('#day_text').text() + day);
   if (isNaN(day)) { day = new Date(('2018-09-27 00:00:00').replace(/-/g, '/')).getDay(); }
+  console.log('day =', day);
   $('#day_text').text( $('#day_text').text() + day);
 })
 
